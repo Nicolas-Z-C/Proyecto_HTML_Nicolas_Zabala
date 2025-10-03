@@ -12,11 +12,11 @@ ul{
 }
 .grid__container{
     display: grid;
-    height: 1000vh;
+    height: 400vh;
     width: 100vw;
     background-color: grey;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
 }
 .grid__bannercontainer{
     grid-column: 1/12;
@@ -151,7 +151,17 @@ ul{
     color: aliceblue;
     text-align: center;
 }
-
+.banner__footer{
+    grid-column: 1/13;
+    grid-row: 16/21;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.banner__footer h1{
+    align-self: center;
+}
 .grid__catalogcontainer{
     grid-column: 1/12;
     grid-row: 2/3;
