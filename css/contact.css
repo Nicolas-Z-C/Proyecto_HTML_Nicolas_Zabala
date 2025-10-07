@@ -1,0 +1,37 @@
+@font-face{
+     font-family:  "roboto";
+     src: url(/assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+body{
+    font-family: "roboto";
+    display: flex;
+    justify-content: center;  
+}
+.grid__container4{
+    height: 100vh;
+    display: grid;
+    width: 100vw;
+    background-color: grey;
+}
+.containers{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background-color: bisque;
+}
+.formcontainer{
+    grid-column: 4/10;
+    grid-row: 3/19;
+    background-color: red;
+}
+.formcontainer form{
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    grid-column: 1/13;
+    grid-row: 20/21;
+    background-color: black;
+}

@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: center;  
 }
-.grid_container{
+.grid_container2{
     height: 210vh;
     width: 100vw;
     display: grid;
@@ -18,12 +18,12 @@ body{
     grid-row: 1/2;
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(23,1fr);
+    grid-template-rows: repeat(22,1fr);
     background-color: aqua;
 }
 .watches_container1{
     grid-column: 2/12;
-    grid-row: 2/24;
+    grid-row: 2/23;
     display: flex;
     align-content: space-around;  
     justify-content: space-around;
