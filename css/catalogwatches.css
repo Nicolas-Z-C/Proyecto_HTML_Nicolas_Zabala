@@ -1,0 +1,21 @@
+@font-face{
+     font-family:  "roboto";
+     src: url(/assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+body{
+    font-family: "roboto";
+    display: flex;
+    justify-content: center;  
+}
+.grid__containerr{
+    display: grid;
+    height: 120vh;
+    width: 100vw;
+    background-color: grey;
+}
+.container{
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(24,1fr);
+}
