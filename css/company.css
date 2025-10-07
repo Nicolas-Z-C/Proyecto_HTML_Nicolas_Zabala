@@ -23,7 +23,6 @@ body{
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(20,1fr);
 }
-
 .grid__historys{
     grid-column: 1/13;
     grid-row: 2/22;
@@ -37,8 +36,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-}
-  
+} 
 .clock-faces {
     width: 340px;
     height: 340px;
@@ -50,8 +48,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-  
+} 
 .hour {
     position: absolute;
     width: 42px;
@@ -73,12 +70,10 @@ body{
     background: #D4AF37;
     color: #072138;
 }
-  
   /* Posiciona las horas en cÃrculo */
 .hour4  { top: 205px; left: 260px; }
 .hour8  { top: 205px; left: 32px;  }
 .hour12 { top: 19px;  left: 150px; }
-  
 .clock-center {
     position: absolute;
     top: 50%; left: 50%;
@@ -94,8 +89,7 @@ body{
     justify-content: center;
     text-align: center;
     padding: 18px;
-}
-  
+}  
 .story-text {
     display: none;
     color: #fff;
@@ -103,8 +97,7 @@ body{
     line-height: 1.5;
     font-weight: 500;
     font-family: inherit;
-}
-  
+} 
 input[type="radio"] { display: none; }
   
   /* Mostrar el texto correspondiente al radio seleccionado */
