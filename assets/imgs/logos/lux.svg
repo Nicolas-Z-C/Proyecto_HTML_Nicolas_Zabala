@@ -1,0 +1,71 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con degradado elegante -->
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F4E5C3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="darkGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fondo del logo -->
+  <rect width="400" height="120" fill="url(#darkGradient)" rx="8"/>
+  
+  <!-- Icono del reloj (lado izquierdo) -->
+  <g transform="translate(50, 60)">
+    <!-- Círculo exterior del reloj -->
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#goldGradient)" stroke-width="3" filter="url(#glow)"/>
+    
+    <!-- Marcas de las horas -->
+    <line x1="0" y1="-30" x2="0" y2="-25" stroke="url(#goldGradient)" stroke-width="2"/>
+    <line x1="0" y1="25" x2="0" y2="30" stroke="url(#goldGradient)" stroke-width="2"/>
+    <line x1="30" y1="0" x2="25" y2="0" stroke="url(#goldGradient)" stroke-width="2"/>
+    <line x1="-25" y1="0" x2="-30" y2="0" stroke="url(#goldGradient)" stroke-width="2"/>
+    
+    <!-- Marcas secundarias -->
+    <circle cx="21" cy="-21" r="1.5" fill="url(#goldGradient)"/>
+    <circle cx="21" cy="21" r="1.5" fill="url(#goldGradient)"/>
+    <circle cx="-21" cy="21" r="1.5" fill="url(#goldGradient)"/>
+    <circle cx="-21" cy="-21" r="1.5" fill="url(#goldGradient)"/>
+    
+    <!-- Manecillas -->
+    <line x1="0" y1="0" x2="0" y2="-15" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="12" y2="-8" stroke="url(#goldGradient)" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Centro del reloj -->
+    <circle cx="0" cy="0" r="3" fill="url(#goldGradient)"/>
+    
+    <!-- Detalles de corona -->
+    <rect x="32" y="-4" width="6" height="8" fill="url(#goldGradient)" rx="1"/>
+    <rect x="38" y="-2" width="3" height="4" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- Línea separadora vertical -->
+  <line x1="110" y1="30" x2="110" y2="90" stroke="url(#goldGradient)" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Texto LUX -->
+  <text x="140" y="75" font-family="'Playfair Display', 'Georgia', serif" font-size="48" font-weight="700" fill="url(#goldGradient)" letter-spacing="4">LUX</text>
+  
+  <!-- Texto TIME -->
+  <text x="255" y="75" font-family="'Montserrat', 'Arial', sans-serif" font-size="48" font-weight="300" fill="#E8E8E8" letter-spacing="6">TIME</text>
+  
+  <!-- Tagline -->
+  <text x="145" y="95" font-family="'Montserrat', 'Arial', sans-serif" font-size="10" fill="#D4AF37" letter-spacing="3" opacity="0.9">TIMELESS ELEGANCE</text>
+  
+  <!-- Detalles decorativos -->
+  <circle cx="135" cy="35" r="2" fill="#D4AF37" opacity="0.6"/>
+  <circle cx="360" cy="85" r="2" fill="#D4AF37" opacity="0.6"/>
+</svg>

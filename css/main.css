@@ -51,7 +51,7 @@ hr{
     align-self: center;
     height: 80%;
     width: 40%;
-    background-image: url('/assets/imgs/relojes/1.webp');
+    background-image: url('/assets/imgs/logos/lux.svg');
     background-size: cover;
     background-position: center;
 }
@@ -67,7 +67,10 @@ hr{
     font-size: 25px;
     font-weight: bold;
     text-decoration: underline;
+    padding-left: 2px;
     color: #2B2D42;
+    border-left: #1E3D59 solid 2px;
+    text-decoration: none;
 }
 .banner{
     grid-column: 1/13;
@@ -193,6 +196,10 @@ hr{
     transition: transform   0.5s ease-out 0.2s, background-color 1s linear 0s;
     background-color: white;
     border: #CED4DA solid 2px;
+}
+.sixcatalog__watch a{
+    width: 100%;
+    height: 60%;   
 }
 .sixcatalog__watch img{
     width: 100%;
@@ -372,7 +379,6 @@ h1{
     width: 23%;
     height: 80%;
     border-radius: 20%;
-    padding: 1%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -396,7 +402,9 @@ h1{
 .vim_vis p{
     font-family: "roboto";
     font-weight: 300;
+    justify-self:center;
     font-size: medium;
+    margin: 2%;
 }
 .vim_vis ul{
     padding-left: 0 ;
@@ -409,4 +417,375 @@ h1{
     grid-row: 5/6;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+}
+
+/* ========================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablets grandes y laptops pequeñas (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .nav__container2 a {
+        font-size: 20px;
+        padding-left: 1px;
+    }
+    
+    .nav__container1img {
+        width: 50%;
+    }
+    
+    .banner__textcontainer h1 {
+        font-size: 24px;
+    }
+    
+    .banner__textcontainerbutton {
+        width: 25%;
+        height: 18%;
+        font-size: 14px;
+    }
+    
+    .sixcatalog__watch {
+        width: 28%;
+    }
+    
+    .vim_vis {
+        width: 30%;
+        height: 85%;
+    }
+    
+    .vim_vis h1 {
+        font-size: small;
+    }
+    
+    .vim_vis p {
+        font-size: small;
+    }
+}
+
+/* Tablets (768px) */
+@media screen and (max-width: 768px) {
+    .grid__container {
+        height: 600vh;
+    }
+    
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    .nav__container1 {
+        width: 100%;
+        justify-content: center;
+        height: 60px;
+    }
+    
+    .nav__container1img {
+        width: 60%;
+        margin-left: 0;
+    }
+    
+    .nav__container2 {
+        width: 100%;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    
+    .nav__container2 a {
+        font-size: 16px;
+        border-left: none;
+        border-bottom: #1E3D59 solid 2px;
+        padding-left: 0;
+        padding-bottom: 2px;
+    }
+    
+    .banner__textcontainer {
+        grid-column: 1/11;
+        grid-row: 6/10;
+        margin-left: 5%;
+    }
+    
+    .banner__textcontainer h1 {
+        font-size: 20px;
+    }
+    
+    .banner__textcontainerbutton {
+        width: 35%;
+        height: 15%;
+        font-size: 12px;
+    }
+    
+    .banner__footer h1 {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .grid__catalogcontainer {
+        grid-column: 1/12;
+        grid-row: 2/3;
+    }
+    
+    .sixcatalog__watch {
+        width: 45%;
+        height: 75%;
+        margin-bottom: 20px;
+    }
+    
+    .sixcatalog__watch h1 {
+        font-size: small;
+    }
+    
+    .sixcatalog__watch p {
+        font-size: small;
+    }
+    
+    .grid__history {
+        grid-column: 1/12;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .history_line {
+        display: none;
+    }
+    
+    .history1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        border-radius: 15px;
+    }
+    
+    .history2 {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        border-radius: 15px;
+    }
+    
+    .history3 {
+        grid-column: 1/2;
+        grid-row: 3/5;
+        border-radius: 15px;
+    }
+    
+    .history4 {
+        grid-column: 2/3;
+        grid-row: 3/5;
+        border-radius: 15px;
+    }
+    
+    .history1 h1,
+    .history2 h1,
+    .history3 h1,
+    .history4 h1 {
+        font-size: small;
+    }
+    
+    .history1 p,
+    .history2 p,
+    .history3 p,
+    .history4 p {
+        font-size: x-small;
+    }
+    
+    .grid__vim {
+        grid-column: 1/12;
+    }
+    
+    .vim_vis {
+        width: 45%;
+        height: 85%;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .vim_vis h1 {
+        font-size: x-small;
+        padding: 0 5px;
+    }
+    
+    .vim_vis p {
+        font-size: x-small;
+    }
+    
+    .grid__vim2 {
+        grid-column: 1/12;
+    }
+}
+
+/* Móviles grandes (481px - 767px) */
+@media screen and (max-width: 480px) {
+    .grid__container {
+        height: 800vh;
+    }
+    
+    .nav__container2 {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px 5px;
+    }
+    
+    .nav__container2 a {
+        font-size: 14px;
+        width: 45%;
+        text-align: center;
+    }
+    
+    .banner__textcontainer {
+        grid-column: 1/12;
+        grid-row: 7/11;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .banner__textcontainer h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .banner__textcontainerbutton {
+        width: 50%;
+        height: 12%;
+        font-size: 11px;
+        align-self: center;
+    }
+    
+    .banner__footer h1 {
+        font-size: 18px;
+    }
+    
+    .sixcatalog__watch {
+        width: 90%;
+        height: auto;
+        min-height: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .catalogcontainer__six,
+    .catalogcontainer__six2 {
+        padding: 20px 10px;
+    }
+    
+    .grid__history {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    .history1,
+    .history2,
+    .history3,
+    .history4 {
+        grid-column: 1/2;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    
+    .history1 {
+        grid-row: 1/2;
+    }
+    
+    .history2 {
+        grid-row: 2/3;
+    }
+    
+    .history3 {
+        grid-row: 3/4;
+    }
+    
+    .history4 {
+        grid-row: 4/5;
+    }
+    
+    .vim_vis {
+        width: 90%;
+        height: auto;
+        min-height: 350px;
+        border-radius: 15px;
+        margin-bottom: 25px;
+        padding: 15px;
+    }
+    
+    .vim_vis img {
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .vim_vis h1 {
+        font-size: small;
+        margin: 10px 0;
+    }
+    
+    .vim_vis p {
+        font-size: small;
+    }
+}
+
+/* Móviles pequeños (320px - 480px) */
+@media screen and (max-width: 375px) {
+    .grid__container {
+        height: 850vh;
+    }
+    
+    .nav__container1img {
+        width: 70%;
+    }
+    
+    .nav__container2 a {
+        font-size: 12px;
+    }
+    
+    .banner__textcontainer h1 {
+        font-size: 16px;
+    }
+    
+    .banner__textcontainerbutton {
+        width: 60%;
+        font-size: 10px;
+    }
+    
+    .banner__footer h1 {
+        font-size: 16px;
+    }
+    
+    .sixcatalog__watch {
+        width: 95%;
+        min-height: 280px;
+    }
+    
+    .sixcatalog__watch h1,
+    .sixcatalog__watch p {
+        font-size: x-small;
+    }
+    
+    .history1 h1,
+    .history2 h1,
+    .history3 h1,
+    .history4 h1 {
+        font-size: x-small;
+    }
+    
+    .vim_vis {
+        width: 95%;
+        min-height: 320px;
+    }
+    
+    .vim_vis img {
+        height: 180px;
+    }
+}
+
+/* Hover effects - Desactivar en dispositivos táctiles */
+@media (hover: none) {
+    .sixcatalog__watch:hover,
+    .vim_vis:hover,
+    .history1:hover,
+    .history2:hover,
+    .history3:hover,
+    .history4:hover {
+        transform: none;
+    }
 }

@@ -87,6 +87,18 @@ hr{
     justify-content: left;
     align-content: space-around;
 }
+.details_containertext button{
+    width: 30%;
+    height: 5vh;
+    align-self: center;
+    background-color: #1E3D59;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: 0.5s;
+}
 .containertext_title{
     font-weight: bold;
     text-transform: uppercase;
@@ -98,4 +110,393 @@ hr{
     text-transform: uppercase;
     font-size: larger;
     align-self: center;
+}
+/* ========================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   ======================================== */
+
+/* Laptops pequeñas (1024px - 1200px) */
+@media screen and (max-width: 1200px) {
+    .containerdetails{
+        gap: 15px;
+    }
+    
+    .details_containertext{
+        padding: 18px;
+    }
+    
+    .containertext_title{
+        font-size: 1.6rem;
+    }
+    
+    .containertext_subtitle{
+        font-size: 1.1rem;
+    }
+    
+    .details_containertext p{
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablets grandes (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .grid__containerr{
+        height: 140vh;
+    }
+    
+    .container{
+        grid-template-rows: repeat(28,1fr);
+    }
+    
+    .containerdetails{
+        grid-column: 1/13;
+        grid-row: 3/27;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    .details_containerimg{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        min-height: 400px;
+    }
+    
+    .details_carruselimgscontainer{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 200px;
+    }
+    
+    .element{
+        min-width: 160px;
+        width: 28%;
+    }
+    
+    .details_containertext{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 25px;
+    }
+    
+    .details_containertext button{
+        width: 50%;
+        height: 55px;
+        font-size: 1.05rem;
+    }
+    
+    .footer{
+        grid-row: 27/29;
+    }
+}
+
+/* Tablets (768px) */
+@media screen and (max-width: 768px) {
+    .grid__containerr{
+        height: 160vh;
+    }
+    
+    .container{
+        grid-template-rows: repeat(32,1fr);
+    }
+    
+    .containerdetails{
+        grid-row: 3/30;
+        padding: 12px;
+        gap: 18px;
+    }
+    
+    .details_containerimg{
+        min-height: 350px;
+    }
+    
+    .details_carruselimgscontainer{
+        height: 180px;
+        gap: 12px;
+    }
+    
+    .element{
+        min-width: 150px;
+        width: 35%;
+    }
+    
+    .element h1{
+        font-size: 0.85rem;
+    }
+    
+    .element p{
+        font-size: 0.8rem;
+    }
+    
+    .details_containertext{
+        padding: 20px;
+    }
+    
+    .containertext_title{
+        font-size: 1.5rem;
+    }
+    
+    .containertext_subtitle{
+        font-size: 1.1rem;
+    }
+    
+    .details_containertext p{
+        font-size: 0.9rem;
+        padding-left: 5%;
+    }
+    
+    .details_containertext button{
+        width: 60%;
+        height: 50px;
+    }
+    
+    .footer{
+        grid-row: 30/33;
+    }
+}
+
+/* Móviles grandes (481px - 767px) */
+@media screen and (max-width: 480px) {
+    .grid__containerr{
+        height: 180vh;
+    }
+    
+    .container{
+        grid-template-rows: repeat(36,1fr);
+    }
+    
+    .containerdetails{
+        grid-column: 1/13;
+        grid-row: 3/34;
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .details_containerimg{
+        min-height: 300px;
+        border-radius: 8px;
+    }
+    
+    .details_containerimg img:hover{
+        transform: scale(1.2);
+    }
+    
+    .details_carruselimgscontainer{
+        height: 160px;
+        gap: 10px;
+        padding: 8px 3px;
+    }
+    
+    .element{
+        min-width: 130px;
+        width: 45%;
+        padding: 8px;
+    }
+    
+    .element img{
+        height: 65%;
+    }
+    
+    .element h1{
+        font-size: 0.8rem;
+        margin: 6px 0 3px 0;
+    }
+    
+    .element p{
+        font-size: 0.75rem;
+        margin: 1px 0;
+    }
+    
+    .details_containertext{
+        padding: 18px 15px;
+    }
+    
+    .containertext_title{
+        font-size: 1.3rem;
+        margin: 12px 0;
+    }
+    
+    .containertext_subtitle{
+        font-size: 1rem;
+        margin: 12px 0 5px 0;
+    }
+    
+    .details_containertext p{
+        font-size: 0.85rem;
+        padding-left: 3%;
+        margin: 6px 0;
+    }
+    
+    hr{
+        width: 90%;
+        margin: 8px 0;
+    }
+    
+    .details_containertext button{
+        width: 70%;
+        height: 48px;
+        font-size: 0.95rem;
+        margin-top: 15px;
+        border-radius: 8px;
+    }
+    
+    .footer{
+        grid-row: 34/37;
+    }
+}
+
+/* Móviles pequeños (320px - 480px) */
+@media screen and (max-width: 375px) {
+    .grid__containerr{
+        height: 190vh;
+    }
+    
+    .container{
+        grid-template-rows: repeat(38,1fr);
+    }
+    
+    .containerdetails{
+        grid-row: 3/36;
+        padding: 8px;
+        gap: 12px;
+    }
+    
+    .details_containerimg{
+        min-height: 280px;
+    }
+    
+    .details_carruselimgscontainer{
+        height: 150px;
+        gap: 8px;
+    }
+    
+    .element{
+        min-width: 120px;
+        width: 48%;
+        padding: 6px;
+    }
+    
+    .element h1{
+        font-size: 0.75rem;
+    }
+    
+    .element p{
+        font-size: 0.7rem;
+    }
+    
+    .details_containertext{
+        padding: 15px 12px;
+    }
+    
+    .containertext_title{
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    
+    .containertext_subtitle{
+        font-size: 0.95rem;
+        margin: 10px 0 4px 0;
+    }
+    
+    .details_containertext p{
+        font-size: 0.8rem;
+        padding-left: 2%;
+        margin: 5px 0;
+    }
+    
+    .details_containertext button{
+        width: 75%;
+        height: 45px;
+        font-size: 0.9rem;
+        margin-top: 12px;
+    }
+    
+    .footer{
+        grid-row: 36/39;
+    }
+}
+
+/* Móviles extra pequeños (320px) */
+@media screen and (max-width: 320px) {
+    .grid__containerr{
+        height: 200vh;
+    }
+    
+    .containerdetails{
+        padding: 6px;
+        gap: 10px;
+    }
+    
+    .details_containerimg{
+        min-height: 260px;
+    }
+    
+    .details_carruselimgscontainer{
+        height: 140px;
+    }
+    
+    .element{
+        min-width: 110px;
+        width: 50%;
+    }
+    
+    .details_containertext{
+        padding: 12px 10px;
+    }
+    
+    .containertext_title{
+        font-size: 1.1rem;
+    }
+    
+    .containertext_subtitle{
+        font-size: 0.9rem;
+    }
+    
+    .details_containertext p{
+        font-size: 0.75rem;
+    }
+    
+    .details_containertext button{
+        width: 80%;
+        height: 42px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Landscape mode para móviles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .grid__containerr{
+        height: 250vh;
+    }
+    
+    .container{
+        grid-template-rows: repeat(45,1fr);
+    }
+    
+    .containerdetails{
+        grid-row: 3/43;
+    }
+    
+    .footer{
+        grid-row: 43/46;
+    }
+}
+
+/* Hover effects - Desactivar en dispositivos táctiles */
+@media (hover: none) {
+    .details_containerimg img:hover{
+        transform: scale(1);
+    }
+    
+    .element:hover{
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .details_containertext button:hover{
+        transform: none;
+        box-shadow: none;
+        background-color: #1E3D59;
+    }
 }

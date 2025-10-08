@@ -12,6 +12,9 @@ body{
     height: 100vh;
     display: grid;
     width: 100vw;
+    background-image: url('/assets/imgs/fondos/1.webp');
+    background-size: cover;
+    background-position: center;
 }
 .containers{
     display: grid;
@@ -80,4 +83,372 @@ body{
     grid-column: 1/13;
     grid-row: 20/21;
     background-color: #1E3D59;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.footer h1{
+    align-self: center;
+    color: #F8F9FA;
+}
+.footer p{
+    align-self: center;
+    color: #F8F9FA;
+}
+.footer a{
+    align-self: center;
+    color: #F8F9FA;
+}
+/* ========================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   ======================================== */
+
+/* Laptops pequeñas (1024px - 1200px) */
+@media screen and (max-width: 1200px) {
+    .formcontainer{
+        grid-column: 3/11;
+    }
+    
+    .forminput {
+        width: 35vw;
+    }
+    
+    .form h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Tablets grandes (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .grid__container4 {
+        height: 110vh;
+    }
+    
+    .containers {
+        grid-template-rows: repeat(22, 1fr);
+    }
+    
+    .formcontainer{
+        grid-column: 2/12;
+        grid-row: 3/20;
+    }
+    
+    .forminput {
+        width: 50vw;
+        height: 6vh;
+    }
+    
+    .form h1 {
+        font-size: 1.6rem;
+    }
+    
+    .form p {
+        font-size: 0.95rem;
+        margin-left: 10%;
+    }
+    
+    .enviar {
+        min-width: 100px;
+        min-height: 40px;
+        font-size: 1rem;
+    }
+    
+    .footer {
+        grid-row: 20/23;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px 15px;
+    }
+    
+    .footer h1,
+    .footer p,
+    .footer a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Tablets (768px) */
+@media screen and (max-width: 768px) {
+    .grid__container4 {
+        height: 120vh;
+        background-attachment: scroll;
+    }
+    
+    .containers {
+        grid-template-rows: repeat(25, 1fr);
+    }
+    
+    .formcontainer{
+        grid-column: 1/13;
+        grid-row: 3/22;
+        margin: 0 15px;
+        border-radius: 15px;
+    }
+    
+    .form {
+        height: 85%;
+        padding: 25px 10px;
+    }
+    
+    .form h1 {
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
+    
+    .form p {
+        font-size: 0.9rem;
+        margin-left: 8%;
+        align-self: center;
+        text-align: center;
+        width: 80%;
+    }
+    
+    .forminput {
+        width: 70vw;
+        height: 50px;
+        font-size: 0.95rem;
+    }
+    
+    .enviar {
+        width: 120px;
+        height: 45px;
+        font-size: 1rem;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    
+    .reds {
+        height: 10vh;
+        padding: 15px 0;
+    }
+    
+    .redes {
+        width: 25%;
+        max-width: 100px;
+    }
+    
+    .footer {
+        grid-row: 22/26;
+        padding: 25px 15px;
+    }
+    
+    .footer h1 {
+        font-size: 1.3rem;
+    }
+    
+    .footer p,
+    .footer a {
+        font-size: 0.85rem;
+        margin: 8px 5px;
+    }
+}
+
+/* Móviles grandes (481px - 767px) */
+@media screen and (max-width: 480px) {
+    .grid__container4 {
+        height: 130vh;
+    }
+    
+    .containers {
+        grid-template-rows: repeat(28, 1fr);
+    }
+    
+    .formcontainer{
+        grid-column: 1/13;
+        grid-row: 3/24;
+        margin: 0 10px;
+    }
+    
+    .form {
+        height: 88%;
+        padding: 20px 5px;
+    }
+    
+    .form h1 {
+        font-size: 1.3rem;
+        margin: 12px 0;
+    }
+    
+    .form p {
+        font-size: 0.85rem;
+        margin-left: 5%;
+        width: 85%;
+    }
+    
+    .forminput {
+        width: 80vw;
+        height: 48px;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    
+    .enviar {
+        width: 140px;
+        height: 48px;
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+    
+    .reds {
+        height: 12vh;
+        padding: 10px 0;
+    }
+    
+    .redes {
+        width: 30%;
+        max-width: 90px;
+    }
+    
+    .footer {
+        grid-row: 24/29;
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 12px;
+    }
+    
+    .footer h1 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+    
+    .footer p,
+    .footer a {
+        font-size: 0.8rem;
+        margin: 6px 0;
+    }
+}
+
+/* Móviles pequeños (320px - 480px) */
+@media screen and (max-width: 375px) {
+    .grid__container4 {
+        height: 140vh;
+    }
+    
+    .containers {
+        grid-template-rows: repeat(30, 1fr);
+    }
+    
+    .formcontainer{
+        grid-row: 3/26;
+        margin: 0 8px;
+    }
+    
+    .form h1 {
+        font-size: 1.2rem;
+    }
+    
+    .form p {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+    
+    .forminput {
+        width: 85vw;
+        height: 45px;
+        font-size: 0.85rem;
+        padding: 6px;
+    }
+    
+    .enviar {
+        width: 130px;
+        height: 45px;
+        font-size: 0.95rem;
+    }
+    
+    .reds {
+        height: 10vh;
+    }
+    
+    .redes {
+        width: 35%;
+        max-width: 80px;
+    }
+    
+    .footer {
+        grid-row: 26/31;
+        padding: 18px 8px;
+        gap: 10px;
+    }
+    
+    .footer h1 {
+        font-size: 1.1rem;
+    }
+    
+    .footer p,
+    .footer a {
+        font-size: 0.75rem;
+    }
+}
+
+/* Móviles extra pequeños (320px) */
+@media screen and (max-width: 320px) {
+    .grid__container4 {
+        height: 145vh;
+    }
+    
+    .formcontainer{
+        margin: 0 5px;
+    }
+    
+    .form {
+        padding: 15px 3px;
+    }
+    
+    .form h1 {
+        font-size: 1.1rem;
+    }
+    
+    .form p {
+        font-size: 0.75rem;
+    }
+    
+    .forminput {
+        width: 88vw;
+        height: 42px;
+        font-size: 0.8rem;
+    }
+    
+    .enviar {
+        width: 120px;
+        height: 42px;
+        font-size: 0.9rem;
+    }
+    
+    .redes {
+        width: 38%;
+        max-width: 70px;
+    }
+}
+
+/* Landscape mode para móviles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .grid__container4 {
+        height: 180vh;
+    }
+    
+    .containers {
+        grid-template-rows: repeat(35, 1fr);
+    }
+    
+    .formcontainer {
+        grid-row: 3/32;
+    }
+    
+    .footer {
+        grid-row: 32/36;
+    }
+}
+
+/* Hover effects - Desactivar en dispositivos táctiles */
+@media (hover: none) {
+    .enviar:hover {
+        transform: none;
+        box-shadow: none;
+        background-color: #1E3D59;
+    }
+    
+    .redes:hover {
+        transform: none;
+    }
 }
