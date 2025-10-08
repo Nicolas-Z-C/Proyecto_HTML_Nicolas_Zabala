@@ -5,24 +5,24 @@
 body{
     font-family: "roboto";
     display: flex;
-    justify-content: center;  
+    justify-content: center; 
+    background-color: #F8F9FA; 
 }
 .grid__container4{
     height: 100vh;
     display: grid;
     width: 100vw;
-    background-color: grey;
 }
 .containers{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(20,1fr);
-    background-color: bisque;
 }
 .formcontainer{
     grid-column: 4/10;
     grid-row: 3/19;
-    background-color: red;
+    background-color: white;
+    border: #CED4DA solid 2px;
 }
 .form{
     display: flex;
@@ -37,7 +37,7 @@ body{
     width: 30vw;
 }
 .important:valid{
-    border-color: aqua;
+    border-color: #2B2D42;
     background-color: aquamarine;
 }
 .important:invalid{
@@ -64,12 +64,10 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    background-color: aqua;
 }
 .redes{
     height: 100%;
     width: 20%;
-    background-color: black;
     display: flex;
     justify-content: center;
 }
@@ -81,5 +79,5 @@ body{
 .footer{
     grid-column: 1/13;
     grid-row: 20/21;
-    background-color: black;
+    background-color: #1E3D59;
 }
