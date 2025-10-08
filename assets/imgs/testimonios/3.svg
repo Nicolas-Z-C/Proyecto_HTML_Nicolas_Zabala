@@ -1,0 +1,151 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes -->
+    <linearGradient id="suitGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d44;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="shirtGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="tieGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#660000;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="skinGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A574;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C89B68;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="faceHighlight">
+      <stop offset="0%" style="stop-color:#E8C4A0;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#D4A574;stop-opacity:0" />
+    </radialGradient>
+    
+    <linearGradient id="hairGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d3d3d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0c0c0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Sombras -->
+    <filter id="softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="400" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Sutil patrón de fondo -->
+  <circle cx="350" cy="80" r="100" fill="#d0d0d0" opacity="0.3"/>
+  <circle cx="50" cy="320" r="80" fill="#d0d0d0" opacity="0.3"/>
+  
+  <!-- Cuello de la chaqueta -->
+  <path d="M 140 380 L 120 280 L 145 260 L 155 240 L 200 230 L 245 240 L 255 260 L 280 280 L 260 380 Z" 
+        fill="url(#suitGradient)" filter="url(#softShadow)"/>
+  
+  <!-- Camisa blanca -->
+  <path d="M 160 260 L 170 240 L 200 235 L 230 240 L 240 260 L 245 300 L 155 300 Z" 
+        fill="url(#shirtGradient)"/>
+  
+  <!-- Corbata -->
+  <path d="M 200 240 L 195 260 L 192 290 L 195 320 L 200 340 L 205 320 L 208 290 L 205 260 Z" 
+        fill="url(#tieGradient)"/>
+  <polygon points="200,240 195,245 200,250 205,245" fill="#660000"/>
+  
+  <!-- Cuello de camisa -->
+  <path d="M 180 245 L 185 235 L 200 232 L 215 235 L 220 245 L 215 252 L 200 248 L 185 252 Z" 
+        fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Cuello -->
+  <ellipse cx="200" cy="240" rx="22" ry="28" fill="url(#skinGradient)"/>
+  
+  <!-- Cara -->
+  <ellipse cx="200" cy="170" rx="65" ry="75" fill="url(#skinGradient)" filter="url(#softShadow)"/>
+  
+  <!-- Highlight facial -->
+  <ellipse cx="200" cy="160" rx="45" ry="50" fill="url(#faceHighlight)"/>
+  
+  <!-- Orejas -->
+  <ellipse cx="138" cy="175" rx="12" ry="18" fill="#C89B68"/>
+  <ellipse cx="262" cy="175" rx="12" ry="18" fill="#C89B68"/>
+  
+  <!-- Cabello -->
+  <path d="M 135 120 Q 130 100 140 85 Q 160 70 200 68 Q 240 70 260 85 Q 270 100 265 120 L 260 140 Q 250 115 200 110 Q 150 115 140 140 Z" 
+        fill="url(#hairGradient)"/>
+  
+  <!-- Líneas del cabello -->
+  <path d="M 155 95 Q 175 85 200 83" stroke="#0a0a0a" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M 245 95 Q 225 85 200 83" stroke="#0a0a0a" stroke-width="1.5" fill="none" opacity="0.4"/>
+  
+  <!-- Cejas -->
+  <path d="M 165 150 Q 175 145 185 148" stroke="#5a4a3a" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 215 148 Q 225 145 235 150" stroke="#5a4a3a" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Ojos -->
+  <ellipse cx="175" cy="165" rx="8" ry="10" fill="#ffffff"/>
+  <ellipse cx="225" cy="165" rx="8" ry="10" fill="#ffffff"/>
+  <circle cx="176" cy="166" r="5" fill="#2d2d2d"/>
+  <circle cx="226" cy="166" r="5" fill="#2d2d2d"/>
+  <circle cx="177" cy="164" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="227" cy="164" r="2" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Nariz -->
+  <path d="M 200 165 L 198 185 Q 198 190 200 192 Q 202 190 202 185 L 200 165" 
+        fill="none" stroke="#B8956A" stroke-width="1.5" stroke-linecap="round"/>
+  <ellipse cx="195" cy="190" rx="3" ry="2" fill="#B8956A" opacity="0.5"/>
+  <ellipse cx="205" cy="190" rx="3" ry="2" fill="#B8956A" opacity="0.5"/>
+  
+  <!-- Boca - sonrisa profesional -->
+  <path d="M 180 205 Q 200 212 220 205" 
+        stroke="#8B6F5C" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 180 205 Q 200 210 220 205" 
+        stroke="#D4A89A" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Sombras faciales -->
+  <ellipse cx="165" cy="180" rx="15" ry="8" fill="#000000" opacity="0.08"/>
+  <ellipse cx="235" cy="180" rx="15" ry="8" fill="#000000" opacity="0.08"/>
+  <ellipse cx="200" cy="220" rx="20" ry="5" fill="#000000" opacity="0.06"/>
+  
+  <!-- Hombros de la chaqueta -->
+  <ellipse cx="120" cy="300" rx="35" ry="45" fill="url(#suitGradient)"/>
+  <ellipse cx="280" cy="300" rx="35" ry="45" fill="url(#suitGradient)"/>
+  
+  <!-- Solapa izquierda -->
+  <path d="M 160 265 L 145 290 L 155 340 L 175 330 L 170 280 Z" 
+        fill="#0f0f1e" opacity="0.9"/>
+  
+  <!-- Solapa derecha -->
+  <path d="M 240 265 L 255 290 L 245 340 L 225 330 L 230 280 Z" 
+        fill="#0f0f1e" opacity="0.9"/>
+  
+  <!-- Botones de la chaqueta -->
+  <circle cx="195" cy="310" r="4" fill="#2d2d44" stroke="#1a1a2e" stroke-width="1"/>
+  <circle cx="195" cy="340" r="4" fill="#2d2d44" stroke="#1a1a2e" stroke-width="1"/>
+  
+  <!-- Bolsillo superior con pañuelo -->
+  <rect x="215" y="275" width="25" height="8" rx="1" fill="#0f0f1e" opacity="0.7"/>
+  <path d="M 220 275 Q 227 268 235 275" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Detalles de costuras -->
+  <path d="M 165 270 L 165 360" stroke="#0a0a0a" stroke-width="0.5" opacity="0.3"/>
+  <path d="M 235 270 L 235 360" stroke="#0a0a0a" stroke-width="0.5" opacity="0.3"/>
+  
+</svg>
