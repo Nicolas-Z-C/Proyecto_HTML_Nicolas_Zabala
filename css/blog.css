@@ -51,13 +51,6 @@ body{
 .cards:hover{
     transform: translateY(-20px);
 }
-#section2{
-    grid-row: 2/3;
-    background-color: aquamarine;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-}
 .footer{
     grid-row: 2/3;
     display: flex;
